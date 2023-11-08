@@ -108,9 +108,8 @@ class JobData(BaseModel):
 
 
 ```python
-# These aren't my keys, these are just freely available on Hiring Cafe if you look at the network traffic on the site
-client = SearchClient.create('8HEMFGMPST', '360c8026d33e372e6b37d18b177f7df5')
-index = client.init_index('HiringCafe-V2')
+client = SearchClient.create('KEY GOES HERE', 'ANOTHER KEY GOES HERE')
+index = client.init_index('INDEX NAME GOES HERE')
 
 query_list = ["Python", "TypeScript", "Java", "C#"]
 filters = ("isRemote:true AND gptApplied:true AND country:'PL' AND job_type:'Full Time' AND "
